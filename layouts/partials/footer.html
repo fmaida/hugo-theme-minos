@@ -1,5 +1,8 @@
 <footer id="footer">
     <div class="outer">
+        
+        {{ partial "social.html" . }}
+
         <div id="footer-info" class="inner">
             &copy; {{ now.Format "2006"}} {{ or .Site.Author.name .Site.Title }}
             <br />
