@@ -97,5 +97,7 @@
         </footer>
         {{ end }}
     </div>
-    {{ partial "nav.html" . }}
+    {{ if (not .Params.Hidden) }}
+        {{ partial "nav.html" . }}
+    {{ end }}
 </article>
